@@ -75,10 +75,13 @@ body{
     border:soild black 1px;
     border-radius: 20px;
     padding: 10px;
+    border:solid  #DE08FF 2px;
 }
-.categories p:focus{
+.categories p:hover{
+    transition: 2s;
     background-color: white;
-    color: black;
+    color:  #DE08FF;
+    border:solid  #DE08FF 2px;
 }
 .sale img{
     width:100%;
@@ -95,6 +98,20 @@ body{
     top:20%;
     left:10%;
     padding: 2%;
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes scale {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
     
 }
 .Recommended{
